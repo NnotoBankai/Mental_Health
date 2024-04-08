@@ -12,3 +12,6 @@ The output of my first script describes loading the data and viewing some of the
 
 This output will show how i processed and cleaned the dataset a bit by checking for missing values, and convert date columns into date objects in jupyter notebook
 <img width="1373" alt="Screenshot 2024-04-05 at 8 28 52 PM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/3552d5ff-9330-4532-a64f-64985b7cb448">
+
+Over here ia a sample output from a code that I manipuated, and inserted into Mongodb to answer my business question: What is the prevalence of mental health medication usage across different age groups?
+<img width="1433" alt="Screenshot 2024-04-07 at 9 08 27 PM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/9f1bf0f7-7e46-4b54-bb85-e75f93a419ee">

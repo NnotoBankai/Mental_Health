@@ -7,3 +7,6 @@ To explain a little about the data, from the website itself it states: "The U.S.
 
 I created the dictionary and uploaded it into my google drive. This is the shareable link: 
 (https://docs.google.com/spreadsheets/d/10oSve2OGYlosZerXtXB6xNjZuW91i4Pfq93un0zO1Dg/edit?usp=sharing)
+
+To import my dataset into Mongodb, I had to convert the original csv file into a json file using a script in Jupyter Notebooks. Then I used a bash script with the mongoimport tool to import the converted json file into Mongodb.
+<img width="1470" alt="Screenshot 2024-04-08 at 6 24 43 PM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/192919c5-5261-4649-b01c-718888c11cab">

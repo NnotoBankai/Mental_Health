@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="MongoDb" id="MongoDb-1a69" database="MongoDb" >
+	<schema name="mental_health" >
+		<table name="care_in_last_4_weeks" virtual="y" >
+			<column name="_id" type="objectId" length="800" decimal="0" jt="-8" mandatory="y" />
+			<column name="Indicator" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Group" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="State" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Subgroup" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Phase" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Time Period" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="Time Period Label" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Time Period Start Date" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Time Period End Date" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Value" type="double" length="800" decimal="0" jt="8" mandatory="y" />
+			<column name="LowCI" type="double" length="800" decimal="0" jt="8" mandatory="y" />
+			<column name="HighCI" type="double" length="800" decimal="0" jt="8" mandatory="y" />
+			<column name="Confidence Interval" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Quartile Range" type="object" length="800" decimal="0" jt="4999544" mandatory="y" />
+			<column name="Suppression Flag" type="double" length="800" decimal="0" jt="8" mandatory="y" />
+			<column name="Start Year" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="Start Month" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="Start Day" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+		</table>
+		<table name="dim_group" virtual="y" >
+			<column name="_id" type="object" length="800" decimal="0" jt="4999544" mandatory="y" />
+			<column name="value" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+		</table>
+		<table name="dim_phase" virtual="y" >
+			<column name="_id" type="object" length="800" decimal="0" jt="4999544" mandatory="y" />
+			<column name="value" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+		</table>
+		<table name="dim_state" virtual="y" >
+			<column name="_id" type="object" length="800" decimal="0" jt="4999544" mandatory="y" />
+			<column name="value" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+		</table>
+		<table name="dim_subgroup" virtual="y" >
+			<column name="_id" type="object" length="800" decimal="0" jt="4999544" mandatory="y" />
+			<column name="value" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+		</table>
+		<table name="dim_time period" virtual="y" >
+			<column name="_id" type="object" length="800" decimal="0" jt="4999544" mandatory="y" />
+			<column name="value" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+		</table>
+		<table name="dim_time period label" virtual="y" >
+			<column name="_id" type="object" length="800" decimal="0" jt="4999544" mandatory="y" />
+			<column name="value" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+		</table>
+		<table name="fact_mental_health_care" virtual="y" >
+			<column name="_id" type="objectId" length="800" decimal="0" jt="-8" mandatory="y" />
+			<column name="Indicator" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Group" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="State" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="Subgroup" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="Phase" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="Time Period" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="Time Period Label" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="Time Period Start Date" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Time Period End Date" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Value" type="double" length="800" decimal="0" jt="8" mandatory="y" />
+			<column name="LowCI" type="double" length="800" decimal="0" jt="8" mandatory="y" />
+			<column name="HighCI" type="double" length="800" decimal="0" jt="8" mandatory="y" />
+			<column name="Confidence Interval" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="Quartile Range" type="object" length="800" decimal="0" jt="4999544" mandatory="y" />
+			<column name="Suppression Flag" type="double" length="800" decimal="0" jt="8" mandatory="y" />
+			<column name="Start Year" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="Start Month" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="Start Day" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+			<fk name="fk_fact_mental_health_care_dim_group" virtual="y" to_schema="mental_health" to_table="dim_group" >
+				<fk_column name="Group" pk="_id" />
+			</fk>
+			<fk name="fk_fact_mental_health_care_dim_time period" virtual="y" to_schema="mental_health" to_table="dim_time period" >
+				<fk_column name="Time Period" pk="_id" />
+			</fk>
+			<fk name="fk_fact_mental_health_care_dim_phase" virtual="y" to_schema="mental_health" to_table="dim_phase" >
+				<fk_column name="Phase" pk="_id" />
+			</fk>
+			<fk name="fk_fact_mental_health_care_dim_subgroup" virtual="y" to_schema="mental_health" to_table="dim_subgroup" >
+				<fk_column name="Subgroup" pk="_id" />
+			</fk>
+			<fk name="fk_fact_mental_health_care_dim_state" virtual="y" to_schema="mental_health" to_table="dim_state" >
+				<fk_column name="State" pk="_id" />
+			</fk>
+			<fk name="fk_fact_mental_health_care_dim_time period label" virtual="y" to_schema="mental_health" to_table="dim_time period label" >
+				<fk_column name="Time Period" pk="_id" />
+			</fk>
+		</table>
+	</schema>
+	<layout name="Main Layout" id="Layout-1351" show_relation="name" >
+		<entity schema="mental_health" name="care_in_last_4_weeks" color="BED3F4" x="289" y="629" />
+		<entity schema="mental_health" name="dim_group" color="BED3F4" x="561" y="221" />
+		<entity schema="mental_health" name="dim_phase" color="BED3F4" x="578" y="561" />
+		<entity schema="mental_health" name="dim_state" color="BED3F4" x="85" y="221" />
+		<entity schema="mental_health" name="dim_subgroup" color="BED3F4" x="68" y="527" />
+		<entity schema="mental_health" name="dim_time period" color="BED3F4" x="561" y="374" />
+		<entity schema="mental_health" name="dim_time period label" color="BED3F4" x="51" y="340" />
+		<entity schema="mental_health" name="fact_mental_health_care" color="BED3F4" x="289" y="221" />
+		<callout x="306" y="85" pointer="Round" >
+			<comment><![CDATA[This is a layout. You can create multiple layouts with the same or different collections. 
+
+
+- Edit collections and validation rules by double-clicking the collection headers.]]></comment>
+		</callout>
+		<group name="Collection &#039;care_in_last_4_weeks&#039;" color="ECF0F7" >
+			<entity schema="mental_health" name="dim_group" />
+			<entity schema="mental_health" name="dim_time period" />
+			<entity schema="mental_health" name="dim_subgroup" />
+			<entity schema="mental_health" name="dim_time period label" />
+			<entity schema="mental_health" name="dim_state" />
+			<entity schema="mental_health" name="care_in_last_4_weeks" />
+			<entity schema="mental_health" name="fact_mental_health_care" />
+			<entity schema="mental_health" name="dim_phase" />
+		</group>
+	</layout>
+	<layout name="~Layout with Sample Tools" id="Layout-2679" show_column_type="y" show_relation="name" >
+		<entity schema="mental_health" name="care_in_last_4_weeks" color="BED3F4" x="323" y="85" />
+		<entity schema="mental_health" name="dim_group" color="BED3F4" x="646" y="85" />
+		<entity schema="mental_health" name="dim_phase" color="BED3F4" x="102" y="561" />
+		<entity schema="mental_health" name="dim_state" color="BED3F4" x="102" y="374" />
+		<entity schema="mental_health" name="dim_subgroup" color="BED3F4" x="323" y="561" />
+		<entity schema="mental_health" name="dim_time period" color="BED3F4" x="646" y="374" />
+		<entity schema="mental_health" name="dim_time period label" color="BED3F4" x="51" y="85" />
+		<entity schema="mental_health" name="fact_mental_health_care" color="BED3F4" x="646" y="561" />
+		<group name="care_in_last_4_weeks" color="ECF0F7" >
+			<entity schema="mental_health" name="care_in_last_4_weeks" />
+			<entity schema="mental_health" name="dim_group" />
+			<entity schema="mental_health" name="fact_mental_health_care" />
+			<entity schema="mental_health" name="dim_time period" />
+			<entity schema="mental_health" name="dim_subgroup" />
+			<entity schema="mental_health" name="dim_phase" />
+			<entity schema="mental_health" name="dim_state" />
+			<entity schema="mental_health" name="dim_time period label" />
+		</group>
+		<script name="Query Editor" id="Editor-1b89" language="SQL" >
+			<string><![CDATA[mental_health.care_in_last_4_weeks.find()
+
+//OR
+
+USE mental_health;
+db.care_in_last_4_weeks.find()
+
+//OR
+
+USE mental_health;
+db.getCollection('care_in_last_4_weeks').find()]]></string>
+		</script>
+		<browser id="Browse-174c" name="Relational Data Explorer" confirm_updates="y" >
+			<browse_table schema="mental_health" entity="care_in_last_4_weeks" x="20" y="20" width="270" height="-60" record_view="y" />
+		</browser>
+		<query id="Query-130e" name="Query Builder" >
+			<query_table schema="mental_health" name="care_in_last_4_weeks" alias="care_in_last_4_weeks" x="51" y="51" >
+				<column name="_id" />
+				<column name="Indicator" />
+				<column name="Group" />
+				<column name="State" />
+				<column name="Subgroup" />
+				<column name="Phase" />
+				<column name="Time Period" />
+				<column name="Time Period Label" />
+				<column name="Time Period Start Date" />
+				<column name="Time Period End Date" />
+				<column name="Value" />
+				<column name="LowCI" />
+				<column name="HighCI" />
+				<column name="Confidence Interval" />
+				<column name="Quartile Range" />
+				<column name="Suppression Flag" />
+				<column name="Start Year" />
+				<column name="Start Month" />
+				<column name="Start Day" />
+			</query_table>
+		</query>
+		<form name="Report" id="Report-1104" template="Page" css="container-fluid" view="frame" >
+			<var name="samplePageNumber" type="4" value="0" mandatory="n" />
+			<var name="sampleRecordsPerPage" type="4" value="100" mandatory="n" />
+			<body name="Body" template="Grid" max_records="100" pos="0,0,0,0,f,f" layout="{{-2,-2,-2,-2,-1},{-2,-2,-2,-2}}" generate_path="y" scroll="n" html="n" header_rows="0" footer_rows="0" >
+				<cell type="label" name="Care_in_last_4_weeks Data" template="H3" pos="0,0,1,0,l,c" />
+				<cell type="chart" name="Pie" template="Pie" pos="0,1,4,1,l,c" max_records="20" generate_path="y" >
+					<form_script type="DataSource" language="SQL" >
+						<var name="_id" type="-8" />
+						<var name="Indicator" />
+						<var name="Group" />
+						<var name="State" />
+						<var name="Subgroup" />
+						<var name="Phase" />
+						<var name="Time Period" type="4" />
+						<var name="Time Period Label" />
+						<var name="Time Period Start Date" />
+						<var name="Time Period End Date" />
+						<var name="Value" type="8" />
+						<var name="LowCI" type="8" />
+						<var name="HighCI" type="8" />
+						<var name="Confidence Interval" />
+						<var name="Quartile Range" type="4999544" />
+						<var name="Suppression Flag" type="8" />
+						<var name="Start Year" type="4" />
+						<var name="Start Month" type="4" />
+						<var name="Start Day" type="4" />
+						<script ><![CDATA[mental_health.care_in_last_4_weeks.find()]]></script>
+					</form_script>
+					<param name="item" value="Confidence Interval" />
+					<param name="width" value="100%" />
+					<param name="title" value="Sample Chart" />
+					<param name="value" value="Start Day" />
+					<param name="height" value="400px" />
+				</cell>
+				<tableview name="sample" template="Table" max_records="100" css="sortable table table-striped table-sm table-hover" pos="0,2,4,2,f,f" layout="{{-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2},{-2,-2}}" generate_path="y" scroll="n" html="n" header_rows="1" footer_rows="0" >
+					<form_script type="DataSource" language="SQL" >
+						<var name="_id" type="-8" />
+						<var name="Indicator" />
+						<var name="Group" />
+						<var name="State" />
+						<var name="Subgroup" />
+						<var name="Phase" />
+						<var name="Time Period" type="4" />
+						<var name="Time Period Label" />
+						<var name="Time Period Start Date" />
+						<var name="Time Period End Date" />
+						<var name="Value" type="8" />
+						<var name="LowCI" type="8" />
+						<var name="HighCI" type="8" />
+						<var name="Confidence Interval" />
+						<var name="Quartile Range" type="4999544" />
+						<var name="Suppression Flag" type="8" />
+						<var name="Start Year" type="4" />
+						<var name="Start Month" type="4" />
+						<var name="Start Day" type="4" />
+						<script ><![CDATA[mental_health.care_in_last_4_weeks.find()]]></script>
+					</form_script>
+					<cell type="label" name="_id" pos="0,0,0,0,c,c" />
+					<cell type="label" name="Indicator" pos="1,0,1,0,c,c" />
+					<cell type="label" name="Group" pos="2,0,2,0,c,c" />
+					<cell type="label" name="State" pos="3,0,3,0,c,c" />
+					<cell type="label" name="Subgroup" pos="4,0,4,0,c,c" />
+					<cell type="label" name="Phase" pos="5,0,5,0,c,c" />
+					<cell type="label" name="Time Period" pos="6,0,6,0,c,c" />
+					<cell type="label" name="Time Period Label" pos="7,0,7,0,c,c" />
+					<cell type="label" name="Time Period Start Date" pos="8,0,8,0,c,c" />
+					<cell type="label" name="Time Period End Date" pos="9,0,9,0,c,c" />
+					<cell type="label" name="Value" pos="10,0,10,0,c,c" />
+					<cell type="label" name="LowCI" pos="11,0,11,0,c,c" />
+					<cell type="label" name="HighCI" pos="12,0,12,0,c,c" />
+					<cell type="label" name="Confidence Interval" pos="13,0,13,0,c,c" />
+					<cell type="label" name="Quartile Range" pos="14,0,14,0,c,c" />
+					<cell type="label" name="${_id}" template="Plain" pos="0,1,0,1,l,c" />
+					<cell type="label" name="${Indicator}" template="Plain" pos="1,1,1,1,l,c" />
+					<cell type="label" name="${Group}" template="Plain" pos="2,1,2,1,l,c" />
+					<cell type="label" name="${State}" template="Plain" pos="3,1,3,1,l,c" />
+					<cell type="label" name="${Subgroup}" template="Plain" pos="4,1,4,1,l,c" />
+					<cell type="label" name="${Phase}" template="Plain" pos="5,1,5,1,l,c" />
+					<cell type="label" name="${Time Period}" template="Plain" pos="6,1,6,1,l,c" />
+					<cell type="label" name="${Time Period Label}" template="Plain" pos="7,1,7,1,l,c" />
+					<cell type="label" name="${Time Period Start Date}" template="Plain" pos="8,1,8,1,l,c" />
+					<cell type="label" name="${Time Period End Date}" template="Plain" pos="9,1,9,1,l,c" />
+					<cell type="label" name="${Value}" template="Plain" pos="10,1,10,1,l,c" />
+					<cell type="label" name="${LowCI}" template="Plain" pos="11,1,11,1,l,c" />
+					<cell type="label" name="${HighCI}" template="Plain" pos="12,1,12,1,l,c" />
+					<cell type="label" name="${Confidence Interval}" template="Plain" pos="13,1,13,1,l,c" />
+					<cell type="label" name="${Quartile Range}" template="Plain" pos="14,1,14,1,l,c" />
+					<cell type="button" name="More" template="Plain" css="btn btn-sm btn-secondary" pos="15,1,15,1,c,c" ref_id="Report-1104" />
+				</tableview>
+				<cell type="href" name="" disabled="${samplePageNumber&lt;1}" pos="0,3,0,3,l,c" glyph="bi-chevron_double_left" ref_id="Report-1104" >
+					<var name="samplePageNumber" value="0" />
+				</cell>
+				<cell type="href" name="" disabled="${samplePageNumber&lt;1}" pos="1,3,1,3,l,c" glyph="bi-chevron_left" ref_id="Report-1104" >
+					<var name="samplePageNumber" value="${Math.max(0,samplePageNumber-1)}" />
+				</cell>
+				<cell type="label" name="Page ${samplePageNumber+1}" pos="2,3,2,3,l,c" />
+				<cell type="href" name="" disabled="${!sampleHasNextPage}" pos="3,3,3,3,l,c" glyph="bi-chevron_right" ref_id="Report-1104" >
+					<var name="samplePageNumber" value="${( samplePageNumber+1 )}" />
+				</cell>
+			</body>
+		</form>
+	</layout>
+</project>

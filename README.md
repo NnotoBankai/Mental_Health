@@ -1,15 +1,14 @@
 # Mental_Health
 ## CIS4400 Homework 1
 
-I have chosen the dataset from https://catalog.data.gov/dataset/mental-health-care-in-the-last-4-weeks! 
-
-To explain a little about the data, from the website itself it states: "The U.S. Census Bureau, in collaboration with five federal agencies, launched the Household Pulse Survey to produce data on the social and economic impacts of Covid-19 on American households. The Household Pulse Survey was designed to gauge the impact of the pandemic on employment status, consumer spending, food security, housing, education disruptions, and dimensions of physical and mental wellness".
+The link to the dataset: https://catalog.data.gov/dataset/mental-health-care-in-the-last-4-weeks! 
+Description: Data on mental health care in the last 4 weeks, including medication and counseling usage.
 
 I created the data dictionary and uploaded it into my google drive. This is the shareable link: 
 https://docs.google.com/spreadsheets/d/1fQpqX0VkYZ6zioF4eoM6Wuhjv5Plp0R9dSrOhwMl6mg/edit?usp=sharing
 
-I created a script that imported the original dataset into MongoDB for storage, and this is the output:
-<img width="1470" alt="Screenshot 2024-05-13 at 10 39 50 PM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/8d09f3ef-68e6-4b8a-8706-b1e978b418ca">
+Wrote a script that imported the original dataset into MongoDB for storage, and this is the output:
+<img width="1470" alt="Screenshot 2024-05-14 at 7 26 56 PM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/0b6bf20b-b66b-4925-b63a-8b61b26acd15">
 
 For the data modeling, I created a python script that created the fact and dimension tables. This is the output of the dbschema:
 

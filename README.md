@@ -12,7 +12,6 @@ I created a script that imported the original dataset into MongoDB for storage, 
 <img width="1470" alt="Screenshot 2024-05-13 at 10 39 50 PM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/8d09f3ef-68e6-4b8a-8706-b1e978b418ca">
 
 For the data modeling, I created a python script that created the fact and dimension tables. This is the output of the dbschema:
-<img width="1470" alt="Screenshot 2024-05-13 at 11 19 56 PM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/18174650-6524-4dce-ba3a-6ed1c7b68acc">
 
 
 

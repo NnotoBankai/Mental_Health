@@ -8,8 +8,9 @@ To explain a little about the data, from the website itself it states: "The U.S.
 I created the data dictionary and uploaded it into my google drive. This is the shareable link: 
 (https://docs.google.com/spreadsheets/d/10oSve2OGYlosZerXtXB6xNjZuW91i4Pfq93un0zO1Dg/edit?usp=sharing)
 
-To import my dataset into Mongodb, I had to convert the original csv file into a json file using a script in Jupyter Notebooks. Then I used a bash script with the mongoimport tool to import the converted json file into my Carerecords collection. This is the output of importing the raw csv into MongoDB:
-<img width="1470" alt="Screenshot 2024-04-08 at 6 24 43 PM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/192919c5-5261-4649-b01c-718888c11cab">
+I created a script that imported the original dataset into MongoDB for storage, and this is the output:
+<img width="1470" alt="Screenshot 2024-05-13 at 10 39 50 PM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/8d09f3ef-68e6-4b8a-8706-b1e978b418ca">
+
 
 ## Homework 2
 I cleaned the dataset to drop null values, remove duplicates, reformat the time and dates. This is the cleaned output in MongoDB:

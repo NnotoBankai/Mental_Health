@@ -1,1 +1,0 @@
-mongoimport --db MentalHealthDB --collection CareRecords --file '/Users/nicholasnoto/Desktop/CIS 4400/Homework1/Mental_Health_Care_in_the_Last_4_Weeks.csv.json' --jsonArray

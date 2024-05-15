@@ -24,9 +24,9 @@ Description: Data on mental health care in the last 4 weeks, including medicatio
 I created the data dictionary and uploaded it into my google drive. This is the shareable link: 
 https://docs.google.com/spreadsheets/d/1fQpqX0VkYZ6zioF4eoM6Wuhjv5Plp0R9dSrOhwMl6mg/edit?usp=sharing
 
-Wrote a script that imported the original dataset into MongoDB for storage, and this is the output:
-<img width="1470" alt="Screenshot 2024-05-14 at 7 26 56 PM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/0b6bf20b-b66b-4925-b63a-8b61b26acd15">
-
+Wrote a script that imported the original dataset into MongoDB for storage, created and populated the dimension/fact tables:
+<img width="1470" alt="Screenshot 2024-05-15 at 10 15 24 AM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/54366ff9-78c6-428b-80ac-5884f6e8b454">
+ 
 For the data modeling, I created a python script that created the fact and dimension tables. This is the output of the dbschema:
 
 

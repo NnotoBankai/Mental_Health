@@ -1,0 +1,23 @@
+Field Name,Description,Data Type,Constraints
+_id,Description for _id,object,None
+Indicator,Description for Indicator,object,None
+Group,Description for Group,object,None
+State,Description for State,object,None
+Subgroup,Description for Subgroup,object,None
+Phase,Description for Phase,object,None
+Time Period,Description for Time Period,int64,None
+Time Period Label,Description for Time Period Label,object,None
+Time Period Start Date,Description for Time Period Start Date,datetime64[ns],None
+Time Period End Date,Description for Time Period End Date,datetime64[ns],None
+Value,Description for Value,float64,None
+LowCI,Description for LowCI,float64,None
+HighCI,Description for HighCI,float64,None
+Confidence Interval,Description for Confidence Interval,object,None
+Quartile Range,Description for Quartile Range,object,None
+Suppression Flag,Description for Suppression Flag,float64,None
+Start Year,Description for Start Year,int64,None
+Start Month,Description for Start Month,int64,None
+Start Day,Description for Start Day,int64,None
+type,Description for type,object,None
+Start Quarter,Description for Start Quarter,int64,None
+CI_Sum,Description for CI_Sum,float64,None

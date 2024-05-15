@@ -1,6 +1,23 @@
 # Mental_Health
 ## CIS4400 Homework 1
 
+1) Business Process
+For the dataset on mental health care in the last 4 weeks, we want to understand the trends and factors affecting mental health care access and outcomes. Specifically, we aim to analyze:
+
+The prevalence of mental health issues reported over the last 4 weeks.
+The types of mental health care services accessed.
+The demographic characteristics of individuals seeking mental health care.
+Any barriers or challenges faced in accessing mental health care.
+
+2) Requirements
+For the data collected, we need to address the following key questions:
+
+What is the prevalence of various mental health issues (e.g., anxiety, depression) in the population?
+What types of mental health services are most commonly accessed (e.g., therapy, medication)?
+How do mental health care access and outcomes vary across different demographic groups (e.g., age, gender, socioeconomic status)?
+What are the common barriers to accessing mental health care (e.g., cost, availability, stigma)?
+For each demographic group, provide summary statistics (mean, median, standard deviation) for key metrics such as the number of mental health care visits, types of services accessed, and reported barriers.
+
 The link to the dataset: https://catalog.data.gov/dataset/mental-health-care-in-the-last-4-weeks! 
 Description: Data on mental health care in the last 4 weeks, including medication and counseling usage.
 

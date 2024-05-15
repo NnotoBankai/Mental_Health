@@ -34,6 +34,5 @@ This is the inital dbschema model:
 
 ## Homework 2
 I cleaned the dataset to drop null values, remove duplicates, reformat the time and dates. This is the cleaned output in MongoDB:
-<img width="1470" alt="Screenshot 2024-05-01 at 11 58 44 PM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/ff803900-d3f2-49d2-83c5-74d7e463e02c">
+<img width="1470" alt="Screenshot 2024-05-15 at 11 09 28 AM" src="https://github.com/NnotoBankai/Mental_Health/assets/160191383/13ef05a0-7cae-4ee0-b8ab-3010a71a48da">
 
-With the transformed data comes the data mapping which you can access from the same google link in the Homework 1 section.

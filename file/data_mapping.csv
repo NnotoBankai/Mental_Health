@@ -1,0 +1,23 @@
+Field Name,Data Type,Description,Source Column,Destination Column
+_id,object,Description for _id,_id,_id
+Indicator,object,Description for Indicator,Indicator,Indicator
+Group,object,Description for Group,Group,Group
+State,object,Description for State,State,State
+Subgroup,object,Description for Subgroup,Subgroup,Subgroup
+Phase,object,Description for Phase,Phase,Phase
+Time Period,int64,Description for Time Period,Time Period,Time Period
+Time Period Label,object,Description for Time Period Label,Time Period Label,Time Period Label
+Time Period Start Date,datetime64[ns],Description for Time Period Start Date,Time Period Start Date,Time Period Start Date
+Time Period End Date,datetime64[ns],Description for Time Period End Date,Time Period End Date,Time Period End Date
+Value,float64,Description for Value,Value,Value
+LowCI,float64,Description for LowCI,LowCI,LowCI
+HighCI,float64,Description for HighCI,HighCI,HighCI
+Confidence Interval,object,Description for Confidence Interval,Confidence Interval,Confidence Interval
+Quartile Range,object,Description for Quartile Range,Quartile Range,Quartile Range
+Suppression Flag,float64,Description for Suppression Flag,Suppression Flag,Suppression Flag
+Start Year,int64,Description for Start Year,Start Year,Start Year
+Start Month,int64,Description for Start Month,Start Month,Start Month
+Start Day,int64,Description for Start Day,Start Day,Start Day
+type,object,Description for type,type,type
+Start Quarter,int64,Description for Start Quarter,Start Quarter,Start Quarter
+CI_Sum,float64,Description for CI_Sum,CI_Sum,CI_Sum

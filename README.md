@@ -19,6 +19,7 @@ What are the common barriers to accessing mental health care (e.g., cost, availa
 For each demographic group, provide summary statistics (mean, median, standard deviation) for key metrics such as the number of mental health care visits, types of services accessed, and reported barriers.
 
 The link to the dataset: https://catalog.data.gov/dataset/mental-health-care-in-the-last-4-weeks! 
+
 Description: Data on mental health care in the last 4 weeks, including medication and counseling usage.
 
 I created the data dictionary and uploaded it into my google drive. This is the shareable link: 
